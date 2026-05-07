@@ -37,37 +37,37 @@ const SERVICES = [
     icon: <FaBug size={18} />,
     title: "Vector Control",
     desc: "Professional vector control eliminating mosquitoes, flies and disease-carrying insects from your premises using approved methods.",
-    image: "https://images.unsplash.com/photo-1585421514284-efb74320d54e?w=400&h=400&fit=crop",
+    image: "/Images/img4.jpeg",
   },
   {
     icon: <FaBug size={18} />,
     title: "Termite Control",
     desc: "Comprehensive termite treatment using advanced drilling & chemical barrier methods to protect your property from structural damage.",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop",
+    image: "/Images/img5.jpeg",
   },
   {
     icon: <GiBed size={22} />,
     title: "Bed Bugs Control",
     desc: "Effective bed bug elimination using heat treatment and pesticides ensuring a completely pest-free sleep environment.",
-    image: "https://images.unsplash.com/photo-1611605698323-b1e99cfd37ea?w=400&h=400&fit=crop",
+    image: "/Images/img6.jpeg",
   },
   {
     icon: <GiAnt size={22} />,
     title: "General Pest Control",
     desc: "Complete pest management for cockroaches, ants, rodents, lizards, and all common household and commercial pests.",
-    image: "https://images.unsplash.com/photo-1632163567268-ef07af25d9ce?w=400&h=400&fit=crop",
+    image: "/Images/img7.jpeg",
   },
   {
     icon: <MdSanitizer size={22} />,
     title: "Disinfection Service",
     desc: "Professional sanitization and disinfection using WHO-approved chemicals for homes, offices, hospitals and commercial spaces.",
-    image: "https://images.unsplash.com/photo-1584515933487-779824d29309?w=400&h=400&fit=crop",
+    image: "/Images/img8.jpeg",
   },
   {
     icon: <BsBuildingFill size={18} />,
     title: "Post Construction Termite Treatment",
     desc: "Specialized anti-termite treatment post-construction to safeguard your new building from subterranean and drywood termites.",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=400&fit=crop",
+    image: "/Images/img9.jpeg",
   },
 ];
 
@@ -117,10 +117,10 @@ const BLOG_POSTS = [
 ];
 
 const PEST_TYPES = [
-  { name: "Cockroaches", image: "https://images.unsplash.com/photo-1574482620826-40685ca5eef2?w=250&h=250&fit=crop" },
-  { name: "Mosquitoes",  image: "https://images.unsplash.com/photo-1585421514284-efb74320d54e?w=250&h=250&fit=crop" },
-  { name: "Bed Bugs",    image: "https://images.unsplash.com/photo-1611605698323-b1e99cfd37ea?w=250&h=250&fit=crop" },
-  { name: "Termites",    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=250&h=250&fit=crop" },
+  { name: "Cockroaches", image: "/Images/img11.jpeg" },
+  { name: "Mosquitoes",  image: "/Images/img12.jpeg"},
+  { name: "Bed Bugs",    image: "/Images/img13.jpeg"},
+  { name: "Spiders",    image: "/Images/img14.jpeg"},
 ];
 
 const STATS = [
@@ -437,9 +437,9 @@ const AboutSection = () => {
             animate={inView ? "visible" : "hidden"}
             className="relative"
           >
-            <div className="relative w-full h-[440px] rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1632163567268-ef07af25d9ce?w=800&h=550&fit=crop"
+                src="/Images/img1.jpeg"
                 alt="Pest Control Expert"
                 className="w-full h-full object-cover"
               />
@@ -452,7 +452,7 @@ const AboutSection = () => {
               className="absolute -bottom-10 -left-8 w-56 h-48 rounded-2xl overflow-hidden border-[5px] border-white shadow-2xl"
             >
               <img
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=350&h=280&fit=crop"
+                src="/Images/0.jpeg"
                 alt="Pest closeup"
                 className="w-full h-full object-cover"
               />
@@ -486,7 +486,7 @@ const AboutSection = () => {
               <div className="flex gap-5">
                 <div className="w-24 h-20 rounded-xl overflow-hidden flex-shrink-0">
                   <img
-                    src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=200&h=160&fit=crop"
+                    src="/Images/img3.jpeg"
                     alt="Service"
                     className="w-full h-full object-cover"
                   />
@@ -536,7 +536,7 @@ const AboutSection = () => {
 const ServicesSection = () => {
   const [ref, inView] = useReveal();
   return (
-    <section id="services" className="bg-[#f0f0ec] py-28">
+    <section id="services" className="bg-[#f0f0ec] pb-28">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           ref={ref}
@@ -660,7 +660,7 @@ const WhyChooseSection = () => {
             <div className="flex items-center gap-4 border-t border-gray-100 pt-6">
               <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-lime-400 flex-shrink-0">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
+                  src="/Images/img7.jpeg"
                   alt="Satyajeet Kushwaha"
                   className="w-full h-full object-cover"
                 />
@@ -682,14 +682,14 @@ const WhyChooseSection = () => {
           >
             <div className="w-[78%] ml-auto h-[260px] rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1585421514284-efb74320d54e?w=600&h=350&fit=crop"
+                src="/Images/img7.jpeg"
                 alt="Pest"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-[72%] h-[310px] rounded-2xl overflow-hidden shadow-2xl mt-4 mr-auto">
               <img
-                src="https://images.unsplash.com/photo-1632163567268-ef07af25d9ce?w=600&h=400&fit=crop"
+                src="/Images/img8.jpeg"
                 alt="Technician"
                 className="w-full h-full object-cover"
               />
@@ -954,7 +954,7 @@ const ProcessSection = () => {
           >
             <div className="rounded-3xl overflow-hidden h-[500px] shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=700&h=600&fit=crop"
+                src="/Images/img16.jpeg"
                 alt="Pest Control Process"
                 className="w-full h-full object-cover"
               />
@@ -1009,7 +1009,7 @@ const TestimonialsSection = () => {
           >
             <div className="rounded-3xl overflow-hidden h-[440px] shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1632163567268-ef07af25d9ce?w=800&h=600&fit=crop"
+                src="/Images/img17.jpeg"
                 alt="Pest Control"
                 className="w-full h-full object-cover"
               />
@@ -1460,7 +1460,7 @@ export default function Home() {
       <PestTypesSection />
       <ProcessSection />
       <TestimonialsSection />
-      <BlogSection />
+      {/* <BlogSection /> */}
       <ContactSection />
       <FloatingCTA />
     </div>
